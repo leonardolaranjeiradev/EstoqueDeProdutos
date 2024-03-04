@@ -10,24 +10,23 @@ public class Produto {
 	public double valorTotalEmEstoque() {
 		return preco * quantidade;
 	}
-
-	public void addProdutos(int quantidade) {
+	
+	public void addProdutos(int quantity) {
 		this.quantidade += quantidade;
 	}
-
+	
 	public void removerProdutos(int quantidade) {
 		this.quantidade -= quantidade;
 	}
-
+	
 	public String toString() {
 		return nome
-		+ ", $ "
-		+ String.format("%.2f", preco)
-		+ ", "
-		+ quantidade
-		+ " Total de unidades: $ "
-		+ String.format("%.2f", valorTotalEmEstoque());
-
+				+ ", R$ "
+				+ String.format("%.2f", preco)
+				+ ", "
+				+ quantidade
+				+ " unidades, Total: R$ "
+				+ String.format("%.2f",valorTotalEmEstoque());
 				
 	}
 
