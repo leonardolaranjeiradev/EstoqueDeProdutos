@@ -22,11 +22,11 @@ public class Produto {
 	public String toString() {
 		return nome
 				+ ", R$ "
-				+ String.format("%.2f", preco)
+				+ preco
 				+ ", "
 				+ quantidade
 				+ " unidades, Total: R$ "
-				+ String.format("%.2f",valorTotalEmEstoque());
+				+ valorTotalEmEstoque();
 				
 	}
 
