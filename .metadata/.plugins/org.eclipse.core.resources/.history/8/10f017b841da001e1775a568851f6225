@@ -11,9 +11,6 @@ public class Produto {
 		return preco * quantidade;
 	}
 	
-	public void addProdutos(int quantity) {
-		this.quantidade += quantidade;
-	}
 	
 
 }
