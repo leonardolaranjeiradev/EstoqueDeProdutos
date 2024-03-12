@@ -20,14 +20,12 @@ public class Program {
 		System.out.print("Quantidade no estoque: ");
 		int quantidade = sc.nextInt();
 		
-		Produto produto = new Produto(nome, preco, quantidade);
-		
 		System.out.println();
 		System.out.println("Dados do Produto: " + produto);
 		
 		System.out.println();
 		System.out.print("Insira a quantidade de produtos a serem adicionados no estoque: ");
-		quantidade = sc.nextInt();		
+		int quantidade = sc.nextInt();		
 		produto.addProdutos(quantidade);
 		
 		System.out.println();		
